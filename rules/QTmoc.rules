@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="Qt Meta Object Compiler"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="Qt MOC"
+			DisplayName="Qt Meta Object Compiler"
+			CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot; -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -I&quot;.\generated&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;.\output\generated\moc&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; &quot;$(InputPath)&quot; -o &quot;.\output\generated\moc\moc_$(InputName).cpp&quot;"
+			Outputs=".\output\generated\moc\moc_$(InputName).cpp&quot;"
+			AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)"
+			FileExtensions="*.moc"
+			ExecutionDescription="moc ... $(InputPath)"
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>
